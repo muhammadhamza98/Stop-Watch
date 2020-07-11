@@ -16,7 +16,7 @@ h1{
    color: white;
 }
 
-.buttons a{
+.buttons button{
    display: inline-block;
    text-decoration: none;
    margin:15px;
@@ -49,4 +49,5 @@ h1{
 }
 .footer{
    color: red;
+   margin-top: 3em;
 }

@@ -20,9 +20,14 @@ function timer(){
 }
 function play(){
 interval=setInterval(timer,10)
+var btn =document.getElementById("Play");
+btn.disabled =true
+
 }
 function stop(){
-	clearInterval(interval)  
+	clearInterval(interval)
+	var btn =document.getElementById("Play");
+	btn.disabled =false	  
 }
 function reset(){
   min=0;
@@ -32,4 +37,6 @@ function reset(){
   second.innerHTML=sec
   msecond.innerHTML=msec
   stop()
+  var btn =document.getElementById("Play");
+  btn.disabled =false	 
 }
